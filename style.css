@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #011627;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Kufam;
+    color: #011627;
+}
+
+.container {
+    background: #FDFFFC;
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.75);
+    width: 80%;
+    max-width: 450px;
+    min-height: 350px;
+    padding: 3em;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: background 500ms;
+}
+
+.container > * {
+    margin: 0;
+}
+
+.title {
+    font-size: 2.1em;
+    font-weight: 700;
+}
+    
+
+.info {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    top: 19%;
+}
+
+.info > * {
+    border-bottom: 2px solid #011627;
+}
+
+.description {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.3em;
+    text-align: center;
+    width: 60%;
+}
+
+.main {
+    background: #FDFFFC;
+    width: 70%;
+    padding: 1.5em;
+    margin-top: 2em;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 6px 1px rgba(0,0,0,0.75);
+    font-size: 1.2em;
+    font-weight: 700;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn {
+    font-family: inherit;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fdfffc;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.75);
+}
+
+.btn:focus,
+.btn:hover {
+   box-shadow: 1px 1px 3px 0.5px rgba(0,0,0,0.75); 
+}
+
+.play-btn {
+    color: #011627;
+    background: #ff9f1c;
+}
+
+.game-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.true-btn {
+    background: #2EC4B6;
+}
+
+.false-btn {
+    background: #E71D36;
+}
+
+.scored {
+    color: #2EC4B6;
+}
+
+.win .description,
+.lose .description {
+    color: #FDFFFC;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.win {
+    background: #2EC4B6;
+}
+
+.lose {
+    background: #E71D36;
+}
+
+.hidden {
+    display: none;
+}

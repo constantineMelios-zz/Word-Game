@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Word Puzzle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Word Puzzle</h1>
+        <div class="info hidden">
+            <p class="scoreBox">Score: <span class="score">0</span></p>
+            <p class="timeBox">Time: <span class="time">30</span>"</p>
+        </div>
+        <p class="description">Is the string of characters enough to create the given word only by removing letters?
+            Choose fast, score 10 to win!</p>
+        <div class="main hidden">
+            <p class="string"></p>
+            <p class="word"></p>
+        </div>
+        <button class="play-btn btn">Play Now</button>
+        <div class="game-btns hidden">
+            <button class="true-btn btn" value="true">true</button>
+            <button class="false-btn btn" value="false">false</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
